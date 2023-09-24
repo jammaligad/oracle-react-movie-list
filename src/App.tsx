@@ -57,7 +57,10 @@ const App = () => {
         </h1>
       </div>
       <div className="m-auto flex w-3/6 justify-center space-x-2">
-        <YearInput onChange={handleActiveYear} />
+        <YearInput
+          onChange={handleActiveYear}
+          placeholder="Enter Year ex. 2015"
+        />
         <Button onClick={handleSearch} label="Search" />
       </div>
       <div className="my-4 text-center">{renderResults()}</div>
